@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;    
+        height: 300px; 
+        border: solid;    
+      }
+
+      h1 {
+        color: red;
+        margin: 10px;
+      }
+
+      #box, #circle {
+        height: 100px;
+        width: 100px;
+        border: solid;
+      }
+
+      #circle {
+        border-radius: 50%;  /* Make it circular */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Heading</h1>
+      <div id="circle"></div>
+      <div id="box"></div>
+    </div>
+  </body>
+</html>

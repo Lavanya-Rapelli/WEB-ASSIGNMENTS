@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Feedback Form</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Arial", sans-serif;
+      }
+
+      body {
+        background-color: #d71448;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #container {
+        width: 550px;
+        padding: 40px;
+        border-radius: 0px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(145deg, #f4f4f4, white);
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      legend {
+        font-family: "Arial", sans-serif;
+      }
+
+      input[type="radio"] {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      .radio-group {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      .agreement {
+        display: flex;
+        align-items:baseline;
+      }
+
+      button:hover {
+        background-color: #45a049;
+      }
+      #tick{
+        margin-left: 20px;
+      }
+
+      #submit {
+        height: 40px;
+        width: 100px;
+        margin-left: 40%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div>
+        <h1>Feedback Form</h1>
+      </div>
+      <div>
+        <label for="pet-select">Feedback type:</label>
+        <select name="feedback" id="pet-select" required>
+          <option value="">Select Feedback Type</option>
+          <option value="compliment">Compliment</option>
+          <option value="complaint">Complaint</option>
+          <option value="suggestion">Suggestion</option>
+        </select>
+      </div>
+
+      <label for="story">Message:</label>
+      <textarea
+        id="story"
+        name="story"
+        rows="5"
+        placeholder="Write your message here..."
+        required
+      ></textarea>
+
+      <legend>Website Rating:</legend>
+      <div class="radio-group">
+        <label
+          ><input
+            type="radio"
+            name="rating"
+            value="excellent"
+            required
+          />Excellent</label
+        >
+        <label><input type="radio" name="rating" value="good" />Good</label>
+        <label
+          ><input type="radio" name="rating" value="average" />Average</label
+        >
+        <label><input type="radio" name="rating" value="poor" />Poor</label>
+      </div>
+
+      <label for="age">Age (10-100):</label>
+      <input type="number" id="age" name="age" min="10" max="100" required />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label for="password">Password (min. 8 characters):</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        minlength="8"
+        required
+      />
+
+      <label for="url">Website URL (Optional):</label>
+      <input type="url" id="url" name="url" placeholder="https://example.com" />
+
+      <div class="agreement">
+        <div><input type="checkbox" id="terms" required /></div>
+        <div><p id="tick">I agree to the terms and conditions</p></div>
+      </div>
+
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </body>
+</html>
