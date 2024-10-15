@@ -1,0 +1,205 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Container to hold everything */
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Sidebar / Navbar Styles */
+  .sidebar {
+    width: 100px;
+    background-color: #f5f5f5;
+    /* padding: 20px; */
+    position: fixed;
+    height: 100%;
+    border-right: 1px solid #e0e0e0;
+  }
+  
+  .sidebar .logo {
+    display: block;
+    margin: 0 auto 30px;
+    max-width: 80%;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding-top: 20px;
+  }
+  
+  .nav-links li {
+    margin-bottom: 15px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    display: block;
+  }
+  
+  .nav-links a:hover {
+    color: #d82c2c;
+  }
+  
+  /* Main Content Area */
+  .content {
+    margin-left: 250px;
+    padding: 40px;
+    width: calc(100% - 250px);
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    border: solid;
+  }
+  
+  /* Login Section */
+  .login-section {
+    width: 45%;
+  }
+  
+  .login-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .login-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .social-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+  }
+  
+  .google {
+    background-color: #db4437;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    padding: 12px;
+    background-color: #d82c2c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #b02424;
+  }
+  
+  .forgot-password {
+    margin-top: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Register Section */
+  .register-section {
+    width: 45%;
+  }
+  
+  .register-section h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .register-btn {
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .register-btn:hover {
+    background-color: #555;
+  }
+  
+  .benefits {
+    list-style: none;
+    margin-top: 10px;
+  }
+  
+  .benefits li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Footer Section */
+  .footer {
+    position: absolute;
+    bottom: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    background-color: #3b2f25;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer .social-icons a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+  }
+  
+  .footer-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+  
+  .language-selector span {
+    margin-left: 10px;
+  }
+  
