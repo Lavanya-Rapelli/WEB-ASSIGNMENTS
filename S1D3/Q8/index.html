@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maggi login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Palanquin", sans-serif;
+            line-height: 1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .maggi-div {
+            background-image: url(maggi-bg.png);
+            height: 130px;
+        }
+
+        .maggi-logo {
+            position: relative;
+            left: 13px;
+            height: 70px;
+            width: 105px;
+            margin: 30px 0;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 6.5vw;
+            height: 100vh;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .nav-list {
+            list-style: none;
+            height: calc(100vh - 150px);
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            line-height: 2rem;
+            margin: 50px 0;
+        }
+
+        h1 {
+            margin: 130px 0 0 180px;
+            font-size: 48px;
+            line-height: 25px;
+        }
+
+        .main {
+            display: flex;
+            margin-left: 180px;
+        }
+
+        .left {
+            width: 550px;
+            border-right: 2px solid #D3D3D3;
+        }
+
+        h2 {
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+
+        .login-buttons {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .facebook,
+        .google {
+            width: 212px;
+            height: 30px;
+            box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.05);
+            margin: 10px 50px 25px 0;
+            cursor: pointer;
+        }
+
+        .google {
+            margin-bottom: 40px;
+        }
+
+        label {
+            color: #999999;
+            font-size: 16px;
+            letter-spacing: 0.5px;
+            line-height: 18px;
+        }
+
+        input {
+            height: 60px;
+            width: 380px;
+            font-size: 16px;
+            line-height: 1.15;
+            margin: 0 20px 20px 0;
+            padding-left: 20px;
+            color: #4e515e;
+            border: 2px solid #b6bdc5;
+        }
+
+        .login-email {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            width: 408px;
+            line-height: 60px;
+            font-size: 20px;
+            font-weight: 500;
+            margin: 20px 0;
+            background-color: #cccccc;
+            color: #fff;
+            box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.05);
+            border: none;
+            cursor: pointer;
+        }
+
+        .right-arrow {
+            height: 23px;
+            width: 23px;
+            padding-right: 13px;
+        }
+
+        .forgot-password {
+            color: #999999;
+            text-decoration: none;
+            border-bottom: 2px solid #AAAAAA;
+            display: inline-block;
+            margin-left: 240px;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        .right {
+            margin-left: 150px;
+        }
+
+        .register {
+            height: 60px;
+            width: 408px;
+            line-height: 60px;
+            font-size: 20px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #333333;
+            color: #ffffff;
+            box-shadow: 0 20px 25px 0 rgba(0, 0, 0, 0.05);
+            margin-bottom: 60px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .bullets {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding-bottom: 15px;
+        }
+
+        p {
+            width: 200px;
+            font-size: 16px;
+            line-height: 24px;
+            color: #333;
+        }
+
+        .feedback {
+            position: fixed;
+            width: 30px;
+            height: 110px;
+            margin: 20px 0 0 205px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="maggi-div">
+            <img class="maggi-logo" src="maggi-logo.webp" alt="maggi-logo">
+        </div>
+        <ul class="nav-list">
+            <li>
+                <img src="https://www.maggi.in/sites/default/files/2020-01/01_Rezepte.svg" alt="Recipes" height="25px"
+                    width="25px">
+                <span>Recipes</span>
+            </li>
+            <li>
+                <img src="https://www.maggi.in/sites/default/files/2019-12/05_Maggi.svg" alt="Maggi" height="25px"
+                    width="25px">
+                <span>Maggi</span>
+            </li>
+            <li>
+                <img src="https://www.maggi.in/sites/default/files/2022-12/LogoMealPlanner_0.svg" alt="MyMenu Plan"
+                    height="25px" width="25px">
+                <span>MyMenu Plan</span>
+            </li>
+            <li>
+                <img src="https://www.maggi.in/sites/default/files/2019-12/03_Suche_11.svg" alt="Search" height="25px"
+                    width="25px">
+                <span>Search</span>
+            </li>
+            <li>
+                <img src="https://www.maggi.in/sites/default/files/2020-07/MAGGI_Navigation_MyMaggi_0_0.svg" alt="Login"
+                    height="25px" width="25px">
+                <span>Login</span>
+            </li>
+        </ul>
+    </nav>
+
+    <h1>My Maggi</h1>
+
+    <div class="main">
+
+        <div class="left">
+            <h2>Welcome back!</h2>
+            <div class="login-buttons">
+                <img class="facebook" src="facebook.png" alt="facebook-login">
+                <img class="google" src="google.png" alt="google-login">
+            </div>
+            <div>
+                <div>
+                    <label for="email">E-mail</label> <br>
+                    <input type="email" class="email" name="email" placeholder="Enter your e-mail address here *"
+                        required>
+                </div>
+                <div>
+                    <label for="password">Password</label> <br>
+                    <input type="password" class="password" name="password" placeholder="Enter your password here *"
+                        required>
+                </div>
+            </div>
+            <button class="login-email"><img class="right-arrow" src="right-arrow.png" alt="right-arrow">Login
+                via e-mail</button>
+            <div>
+                <a class="forgot-password" href="https://www.maggi.in/en/login" target="_blank">Forgot your
+                    password?</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <h2>Not registered yet?</h2>
+            <div>
+                <button class="register"><img class="right-arrow" src="yellow-arrow.png" alt="right-arrow" height="10px"
+                        width="10px"> Register</button>
+            </div>
+            <div>
+                <h2>Join Maggi today!</h2>
+                <div>
+                    <div class="bullets">
+                        <img src="check.png" alt="check" height="50px" width="50px">
+                        <p>Your personal newsletter with exciting recipes and ideas</p>
+                    </div>
+                    <div class="bullets">
+                        <img src="check.png" alt="check" height="50px" width="50px">
+                        <p>Personalize your newsletter to your preferences</p>
+                    </div>
+                    <div class="bullets">
+                        <img src="check.png" alt="check" height="50px" width="50px">
+                        <p>Get to know about Maggi products</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <img class="feedback" src="feedback.png" alt="feedback">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
