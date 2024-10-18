@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+        }
+        body::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+        }
+        .nav{
+            border: 0px solid;
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            background-color: #fedfe5;
+        }
+        .para{
+            font-size: 20px;
+            font-family: sans-serif;
+            size: 16px;
+            font-weight: 600;
+            font-style: normal;
+            background-color: #fedfe5;
+
+        }
+        .but{
+            height: 60px;
+            width: 10%;
+            background-color: #ed0331;
+            font-family: sans-serif;
+            color: white;
+            border: 0px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-style: normal; 
+            line-height: 24px; 
+            font-size: medium;
+        }
+        .but:hover {
+            background-color: #d50c38;
+            cursor: pointer;
+        }
+        .box{
+            height: 13vh;
+            border: 1px solid rgb(249, 247, 249);
+            box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; 
+            display: flex;
+            justify-content:space-between;
+            align-items: center;  
+        }
+        p{
+            font-size: 20px;
+            font-family: Arial;
+            font-weight: 500;
+        }
+        .courses{
+            width: 70%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-family: sans-serif;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 18px;
+            font-style: normal;
+            gap: 55px;
+        }
+         .box p:hover{
+            cursor: pointer;
+            color: #d50c38;
+            background-color: #fdf3f5;
+        }
+        .but1{
+            /* border: 2px solid #3e3f38; */
+            height: 80px;
+            width: 25%;
+            display: flex;
+            align-items: center;
+            gap: 20px;           
+        }
+        .img{
+            /* height: 100%; */
+            padding-left: 15px;
+        }
+        .refer{
+            color: #a4a6e6;
+            background-color: #e5feff;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 12px;
+            font-weight: 400;
+            font-style: normal; 
+            line-height: 30px;
+            font-size: larger; 
+            height: 70px;
+            width: 220px;
+            border: none;
+
+        }
+        .refer:hover {
+            background-color: #dcddea;
+            cursor: pointer;
+        }
+        .signup{
+            height:75px;
+            width: 40%;
+            color: #ee0d39;
+            border:2px solid  #ee0d39;
+            font-family: 'Poppins', sans-serif;
+            background-color: white;
+            border-radius: 15px;
+            font-weight: 400;
+            font-style: normal; 
+            line-height: 30px;
+            font-size: larger; 
+        }
+        .signup:hover {
+            background-color: #fedce5;
+            cursor: pointer;
+        }
+        .big{
+            /* border:1px solid black;   */
+            width: 100%;
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            height: 600px;        
+        }
+        .big1{
+            /* border: 1px solid grey; */
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 20px 2px 50px 2px;
+            height:500px;
+            padding:4% 0% 0% 0%;
+            margin-left:25px;
+        }
+        .big2{
+            /* border: 1px solid grey; */
+            width: 50%;
+            display: flex;
+    
+        }
+        .vid{
+            margin: 5%;
+            width:100%;
+            height: 450px;
+            display: flex;
+            border-radius: 15px;
+            align-items: center;
+            background-size: cover;       
+
+        }       
+        .pro{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 75px;
+            font-style: normal;
+            color: #7275cd;
+            margin: 30px 0px 0px 0px;
+
+        }
+        .sub{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            font-style: normal;
+            color: #000000;
+            margin:25px 0px 0px 0px;
+        }
+        .apply{
+            height: 60px;
+            width: 20%;
+            background-color: #ed0331;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            border: 0px;
+            border-radius: 12px;
+            font-weight: 400;
+            font-style: normal; 
+            line-height: 30px;
+            font-size: larger; 
+            margin:25px 0px 0px 10px;
+        }
+        .bottom{
+            height: 45vh;
+            width: 100%;
+            background-color: #3470e4;
+        }
+        .one{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .heading{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-style: normal; 
+            line-height: 30px;
+            font-size: 50px;
+            line-height: 40px;
+            margin:40px 0px 0px 0px;
+            
+        }
+        .paragraph{
+            font-family:sans-serif;
+            font-weight: 700;
+            font-style: normal; 
+            font-size: 25px;
+            line-height: 40px;
+            margin:25px 0px 0px 70px;
+            color: white;
+            
+        }
+        .two{
+            display: flex;
+            justify-content:space-evenly;
+            align-items: center;
+            gap: 30px;
+            align-items: center;
+            margin:25px 0px 0px 0px;
+
+
+        }
+        .c1{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 75px;
+            font-style: normal;
+            color: white; 
+            margin: 8% 0% 0% 0%; 
+        }
+        .c2{
+            font-family:sans-serif;
+            font-weight: 600;
+            font-style: normal; 
+            font-size: 25px;
+            line-height: 40px;          
+            color: white;
+            text-align: center;
+        }
+        </style>
+</head>
+<body>
+    <div class="nav">
+        <p1 class="para">Admissions open for our 22nd Jan’24 batch. Limited seats reserved for 12th Grads.</p1>
+        <button class="but">APPLY NOW</button>
+    </div> 
+    <div class="box">
+        <div class="img">
+            <img style="height: 50px;" src="masai logo.webp" alt="Logo">
+        </div>
+
+        <div class="courses">
+
+            <p>COURSES</p>
+            <p>FEES</p>
+            <p>EVENTS</p>
+            <p>LEARN</p>
+            <p>SUCCESS STORIES</p>
+            <p>HIRE FROM US</p> 
+        </div>
+        
+        <div class="but1">
+            <button class="refer">REFER & EARN</button>
+            <button class="signup">SIGN UP</button>
+        </div>
+    </div>
+    <div class="big">
+        <div class="big1">
+            <h2 class="pro">Proof that dreams do come true</h2>
+            <h3 class="sub">A testament to what’s possible</h3>
+            <button class ="apply">APPLY NOW</button>
+        </div>
+        <div class="big2">
+            <iframe class="vid" width="700" height="315" src="https://www.youtube.com/embed/0867JeIfyLY?si=HJJt406qVfeTB0ta&amp;start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+     <div class="bottom">
+     <div class="one">
+        <h1 class="heading">How is Masai Creating an Impact?</h1>       
+        <h3 class="paragraph">4000+ students placed across 1000+ companies</h3>      
+     </div>
+    <div class="two">
+        <div>
+            <p class="c1">4000+</p>
+            <p class="c2">Hiring Partners</p>
+        </div>
+        <div>
+            <p class="c1">6.9 LPA</p>
+            <p class="c2">Average CTC</p>
+        </div>
+        <div>
+            <p class="c1">6,000+</p>
+            <p class="c2">Currently Enrolled Students</p>
+        </div>
+        <div>
+            <p class="c1">94%</p>
+            <p class="c2">Placement Rate</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
