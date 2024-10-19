@@ -1,0 +1,12 @@
+
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .toggle-label {
+    color: gray;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
