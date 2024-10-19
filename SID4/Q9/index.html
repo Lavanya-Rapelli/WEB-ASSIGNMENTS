@@ -1,27 +1,286 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Umso - Pricing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #090B0E;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            padding: 15px 50px;
+        }
+
+        h3 {
+            color: #6424EF;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-size: 18px;
+            color: #b3b3b3;
+        }
+
+        .pricing {
+            display: flex;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #090B0E;
+            border-radius: 10px;
+            border: 1px solid #2E2E2E;
+            padding: 20px 40px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            margin-top: 15px;
+        }
+
+        .pro-card {
+            width: 55%;
+        }
+
+        .pro-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 25px;
+            margin-top: 10px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            color: #b3b3b3;
+            margin-top: 6px;
+        }
+
+        .total-price {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .price {
+            font-size: 48px;
+            margin: 20px 0 40px;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 16px;
+            width: 50%;
+            margin: 10px 0;
+            color: #b3b3b3;
+        }
+
+        .fa-check {
+            color: #2541DF;
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background-color: #6F25E5;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 20px 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: #6F25E5;
+            }
+        }
+
+        .basic-card {
+            width: 25%;
+        }
+
+        h4 {
+            font-size: 24px;
+            margin-bottom: 0;
+        }
+
+        .basic-p {
+            width: 80%;
+        }
+
+        .basic-features {
+            list-style: none;
+            padding: 0;
+        }
+
+        .basic-li {
+            width: 100%;
+        }
+
+        .basic-btn {
+            background-color: #090B0E;
+            border: 1px solid #2E2E2E;
+
+            &:hover {
+                background-color: #FFFFFF;
+                color: #090B0E;
+            }
+        }
+
+        .toggle {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #b3b3b3;
+            margin-right: 10px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 20px;
+        }
+
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #090B0E;
+            border-radius: 34px;
+            border: 1px solid #ccc;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: #FFFFFF;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: #6F25E5;
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(14px);
+        }
+    </style>
 </head>
+
 <body>
-    <p>PRICING</p>
-    <h1>One Price for Everything</h1>
-    <p>the simplest pricing in the industry</p>
     <div class="container">
-        <div class="left">
-            <div class="proBill">
-                <div>Pro</div>
-                <div class="toggle-container">
-                    <label class="toggle-label monthly-label">Bill Monthly</label>
-                    <input type="checkbox" id="billing-toggle" />
-                    <div class="slider"></div>
-                    <label class="toggle-label yearly-label">Bill Yearly</label>
-                  </div>
+
+        <h3>PRICING</h3>
+        <div class="header">
+            <h1>One Price for Everything</h1>
+            <span>The simplest pricing in the industry. You won't need a calculator for this.</span>
         </div>
-        <div class="right"></div>
+        <div class="pricing">
+
+            <div class="card pro-card">
+                <div class="pro-line">
+                    <h2>Pro</h2>
+                    <div class="toggle">
+                        <label>Bill Monthly</label>
+                        <label class="switch">
+                            <input type="checkbox" id="billingToggle">
+                            <span class="slider"></span>
+                        </label>
+                        <label>Bill Yearly</label>
+                    </div>
+                </div>
+                <p>Includes everything you need for your professional website</p>
+                <div class="total-price">
+                    <div class="price" id="price">$20</div>
+                    <p id="billingPeriod">/ Site / Month (billed annually)</p>
+                </div>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i>Custom Domains</li>
+                    <li><i class="fas fa-check"></i>Password Protection</li>
+                    <li><i class="fas fa-check"></i>GDPR Solution</li>
+                    <li><i class="fas fa-check"></i>Multilingual Sites</li>
+                    <li><i class="fas fa-check"></i>Beautiful Site Design</li>
+                    <li><i class="fas fa-check"></i>User Management</li>
+                    <li><i class="fas fa-check"></i>Super-Fast Hosting</li>
+                    <li><i class="fas fa-check"></i>Unlimited Pages</li>
+                    <li><i class="fas fa-check"></i>Analytics</li>
+                    <li><i class="fas fa-check"></i>Unlimited Team Members</li>
+                    <li><i class="fas fa-check"></i>Custom Forms</li>
+                    <li></li>
+                    <li><i class="fas fa-check"></i>Blogging</li>
+                </ul>
+                <a href="#" class="btn">Get Started <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="card basic-card">
+                <h4>Basic</h4>
+                <p class="basic-p">Publish your site for free with almost all pro features.</p>
+                <div class="price">Free</div>
+                <ul class="basic-features">
+                    <li class="basic-li">Everything from Pro, except:</li>
+                    <li class="basic-li">— No Custom Domains</li>
+                    <li class="basic-li">— "Made with Umso" Branding</li>
+                </ul>
+                <p>No credit card required</p>
+                <a href="#" class="btn basic-btn">Get Started</a>
+            </div>
+        </div>
     </div>
+
+    <script>
+        document.getElementById('billingToggle').addEventListener('change', function () {
+            var priceElement = document.getElementById('price');
+            var billingPeriodElement = document.getElementById('billingPeriod');
+            if (this.checked) {
+                priceElement.textContent = '$240';
+                billingPeriodElement.textContent = '/ Site / Year';
+            } else {
+                priceElement.textContent = '$20';
+                billingPeriodElement.textContent = '/ Site / Month (billed annually)';
+            }
+        });
+    </script>
 </body>
+
 </html>
