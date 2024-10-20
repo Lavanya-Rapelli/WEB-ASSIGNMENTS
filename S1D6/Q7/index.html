@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <style>
+        body {
+            background-color: #4bb1d3;
+            margin: 0;
+            padding: 10px;
+        }
+        .box {
+            height: auto;
+            width: 100%;
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1%;
+            margin: auto;
+            padding: 15px;
+            border-radius: 14px;
+            background-color: #292a2b; 
+        }
+        .box > div {
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            border-radius: 5px;
+            color: #49a8db;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            font-family: sans-serif;
+            font-weight: 600;
+            padding: 10px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        #ent {
+            grid-area: 3/11/4/span 2;
+        }
+        #shft {
+            grid-area: 4/11/5/span 2;
+        }
+        #space {
+            grid-column: 5/span 4;
+        }
+        @media (max-width: 600px) {
+            .box {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            .box > div {
+                font-size: 1em;
+                padding: 5px;
+            }
+        }
+        @media (max-width: 400px) {
+            .box {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .box > div {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body> 
+    <div class="box">
+        <div>~</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>del</div>
+        <div>tab</div>
+        <div>Q</div>
+        <div>W</div>
+        <div>E</div>
+        <div>R</div>
+        <div>T</div>
+        <div>Y</div>
+        <div>U</div>
+        <div>I</div>
+        <div>O</div>
+        <div>P</div>
+        <div>\</div>
+        <div>caps</div>
+        <div>A</div>
+        <div>S</div>
+        <div>D</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div id="ent">enter</div>
+        <div>shft</div>
+        <div>Z</div>
+        <div>X</div>
+        <div>C</div>
+        <div>V</div>
+        <div>B</div>
+        <div>N</div>
+        <div>M</div>
+        <div><span class="material-symbols-outlined">chevron_left</span></div>
+        <div><span class="material-symbols-outlined">chevron_right</span></div>
+        <div id="shft">shft</div>
+        <div><span class="material-symbols-outlined">language</span></div>
+        <div>ctrl</div>
+        <div>opt</div>
+        <div>alt</div>
+        <div id="space">space</div>
+        <div>alt</div>
+        <div>opt</div>
+        <div><span class="material-symbols-outlined">arrow_back</span></div>
+        <div><span class="material-symbols-outlined">arrow_forward</span></div>
+    </div>  
+</body>
+</html>
