@@ -1,105 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body {
-            padding: 0;
-            margin: 0;
-            background-color: #f0f0f0;
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #f0f0f0;
+      }
+      .box {
+        width: 100%;
+        height: 60vh;
+        max-width: 350px;
+        padding: 20px;
+        margin: auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+          rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        border-radius: 7px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+      .box > div {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #000001;
+        font-family: "Times New Roman";
+        font-weight: 600;
+        padding: 20px;
+        font-size: 1.5em;
+      }
+      h1 {
+        font-family: "Times New Roman";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 45px;
+        color: #008080;
+        display: flex;
+        justify-content: center;
+      }
+      #display {
+        grid-area: 1 / span 4;
+        border: 0 solid;
+        height: auto;
+        width: auto;
+        color: rgb(248, 241, 241);
+        padding: 20px;
+        font-size: 2em;
+        text-align: right;
+      }
+      #plus,
+      #minus,
+      #into,
+      #dividedby,
+      #equalsto {
+        color: #ffffff;
+        background-color: #000001;
+      }
+      #clear {
+        color: #ffffff;
+        background-color: #fe0301;
+      }
+      #plus,
+      #minus,
+      #into,
+      #dividedby,
+      #equalsto {
+        background-color: black;
+        color: white;
+
+        &:hover {
+          background-color: white;
+          color: black;
         }
+      }
+
+      #clear {
+        background-color: #fe0301;
+        color: white;
+
+        &:hover {
+          background-color: white;
+          color: #fe0301;
+        }
+      }
+
+      .box > div:hover {
+        background-color: black;
+        color: white;
+      }
+      @media (max-width: 600px) {
         .box {
-            width: 100%;
-            height: 60vh;
-            max-width: 350px;
-            padding: 20px;
-            margin: auto;
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            gap: 2%;
-            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            border-radius: 7px;
-            grid-template-columns: repeat(4, 1fr);
+          width: 100%;
+          height: auto;
+          padding: 15px;
         }
         .box > div {
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            border: 1px solid transparent;
-            border-radius: 7px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #000001;
-            font-family: 'Times New Roman';
-            font-weight: 600;
-            padding: 20px;
-            font-size: 1.5em;
+          font-size: 1.2em;
+          padding: 15px;
         }
         h1 {
-            font-family: 'Times New Roman';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 45px;
-            color: #008080;
-            display: flex;
-            justify-content: center;
+          font-size: 28px;
         }
-        #display {
-            grid-area: 1 / span 4;
-            border: 0 solid;
-            height: auto;
-            width: auto;
-            color: rgb(248, 241, 241);
-            padding: 20px;
-            font-size: 2em;
-            text-align: right;
-        }
-        #plus, #minus, #into, #dividedby, #equalsto {
-            color: #ffffff;
-            background-color: #000001;  
-        }
-        #clear {
-            color: #ffffff;
-            background-color: #fe0301;
-        }
-        @media (max-width: 600px) {
-            .box {
-                width: 100%;
-                height: auto;
-                padding: 15px;
-            }
-            .box > div {
-                font-size: 1.2em;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 28px;
-            }
-        }
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Masai Calculator</h1>
     <div class="box">
-        <div id="display">box1</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div id="plus">+</div>
-        <div>4</div>
-        <div>5</div>
-        <div>6</div>
-        <div id="minus">-</div>
-        <div>7</div>
-        <div>8</div>
-        <div>9</div>
-        <div id="into">X</div>
-        <div id="clear">C</div>
-        <div>0</div>
-        <div id="equalsto">=</div>
-        <div id="dividedby">/</div>
+      <div id="display">box1</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div id="plus">+</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div id="minus">-</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div id="into">X</div>
+      <div id="clear">C</div>
+      <div>0</div>
+      <div id="equalsto">=</div>
+      <div id="dividedby">/</div>
     </div>
-</body>
+  </body>
 </html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layout Example</title>
+  <style>
+    body{
+      background-color: rgb(239, 106, 239);
+    }
+    .box {
+      height: 70vh;
+      width: 50%;
+      display: grid;
+      grid-template-areas: 
+        "a1 a1 a2"
+        "a3 a4 a2";
+      gap: 2%;
+      row-gap: 3%;
+      text-align: center;
+    } 
+    .box > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: rgb(4, 4, 4);
+    }
+    .box > div:nth-child(1) {
+      grid-area: a1;
+      background-color: rgb(229, 26, 26);
+    }
+
+    .box > div:nth-child(2) {
+      grid-area: a2;
+      background-color: rgb(221, 184, 20); 
+    }
+
+    .box > div:nth-child(3) {
+      grid-area: a3;
+      background-color: rgb(80, 29, 209); 
+    }
+
+    .box > div:nth-child(4) {
+      grid-area: a4;
+      background-color: rgb(20, 224, 139); 
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div>4</div>
+    <div>6</div>
+    <div>1</div>
+    <div>5</div>
+  </div>
+</body>
+</html>
