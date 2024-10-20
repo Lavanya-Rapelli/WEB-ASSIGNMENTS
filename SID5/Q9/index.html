@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/607bd7ac2c.js" crossorigin="anonymous"></script>
+    <title>Masai News</title>
+
+    <style>
+        body {
+            font-family: 'Poppins';
+            margin: 0;
+        }
+
+        main {
+            background-color: #F2F6FF;
+            padding: 20px;
+        }
+
+        h1 {
+            line-height: 40px;
+            font-size: 34px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .news {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .news-card {
+            width: 385px;
+            background-color: rgb(255 255 255);
+            border-radius: 16px;
+            padding-bottom: 20px;
+            box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .news-card p {
+            margin: 12px 20px 12px 30px;
+        }
+
+        .news-img {
+            width: 330px;
+            height: 190px;
+            margin: 30px 0 0 30px;
+            border: 1px solid rgb(204 204 204);
+            border-radius: 0.5rem;
+        }
+
+        .date {
+            color: rgb(52 112 228);
+            font-weight: 600;
+            padding-top: 15px;
+        }
+
+        .headline {
+            font-weight: 700;
+        }
+
+        .content {
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(84 77 79);
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: rgb(237 3 49);
+            background-color: transparent;
+            border: 1px solid rgb(237 3 49);
+            border-radius: 7px;
+            text-align: center;
+            padding: 10px 15px;
+            margin: 35px auto;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgb(223 229 254);
+            }
+        }
+
+        .investors {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 60px;
+        }
+
+        .investors img {
+            border: 1px solid rgb(204 204 204);
+            border-radius: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Masai in News</h1>
+        <div class="news">
+            <div class="news-card">
+                <img class="news-img" src="money-control.png" alt="money-control">
+                <p class="date">26 Oct 2021</p>
+                <p class="headline">Kunal Shah, Vijay Shekhar Sharma, Amrish Rau among 21 angel investors in Masai
+                    School</p>
+                <p class="content">Masai School is aiming to expand to 20 smaller cities by March 2022 and exp...</p>
+            </div>
+            <div class="news-card">
+                <img class="news-img" src="economic-times.png" alt="the-economic-times">
+                <p class="date">21 Dec 2021</p>
+                <p class="headline">Edtech startup Masai School acquires data analytics firm Prepleaf for $1 million.
+                </p>
+                <p class="content">With their latest acquisition, Masai moves one step closer to becoming Indi...</p>
+            </div>
+            <div class="news-card">
+                <img class="news-img" src="vccircle.png" alt="vccircle">
+                <p class="date">18 Aug 2020</p>
+                <p class="headline">Unitus Ventures leads pre-Series A funding for coding-focussed Masai School</p>
+                <p class="content">Software coding platform Masai School has raised $2.5 million (Rs 18.6 cror...</p>
+            </div>
+        </div>
+        <button>SEE MORE <img src="right-arrow.png" alt="right-arrow" width="24px" height="24px"></button>
+    </main>
+    <footer>
+        <h1>Our Investors (Who believed in us)</h1>
+        <div class="investors">
+            <img src="india-q.svg" alt="india-quotient">
+            <img src="omidyar.svg" alt="omidyar-network">
+            <img src="capria-logo.svg" alt="capria-logo">
+        </div>
+        <button>SEE MORE INVESTORS<img src="right-arrow.png" alt="right-arrow" width="24px" height="24px"></button>
+    </footer>
+</body>
+
+</html>
