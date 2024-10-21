@@ -3,113 +3,171 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <style>
-    .main {
-      height: 150vh;
-      width: 70%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 2%;
-      margin: 5% 30% 0% 5%;
-      padding: 2% 5% 3% 5%;
-      text-align: center;
-      box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-        rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-    }
-    .main > div {
-      width: 30%;
-      height: 480px;
-      border: 1px solid;
-      background-position: center;
-      background-size: cover;
-      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    }
-    .main img {
-      width: 80%;
-      height: auto;
-      max-height: 70%;
-    }
-    .main button {
-      height: 10%;
-      width: 50%;
-      color:black;
-      background-color: rgb(135, 204, 244);
-      font-family: sans-serif;
-      font-size: 32px;
-      /* border-radius: 15px; */
-      margin-top: 10px;
-      border: none;
-    }
+    <title>Movie Booking</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+        background-color: #f5f5f5;
+      }
 
-    h1 {
-      font-family: sans-serif;
-      font-size: 1.5em;
-      font-weight: bold;
-    }
-    p {
-      font-family: sans-serif;
-      font-size: 20px;
-      font-weight: bold;
-    }
-  </style>
+      .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 5% 2%;
+      }
+
+      .main > div {
+        width: 20%;
+        border: 1px solid #ddd;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        background-color: white;
+        text-align: center;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: transform 0.2s;
+      }
+
+      .main > div:hover {
+        transform: scale(1.05);
+      }
+
+      .main img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        max-height: 300px;
+      }
+
+      h1 {
+        font-size: 1.5em;
+        margin: 10px 0;
+      }
+
+      p {
+        font-size: 1.2em;
+        margin: 5px 0;
+      }
+
+      button {
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 1.2em;
+        background-color: rgb(135, 204, 244);
+        border: none;
+        border-radius: 5px;
+        color: black;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: rgb(90, 180, 220);
+      }
+
+      @media (max-width: 768px) {
+        .main > div {
+          width: 45%; 
+        }
+      }
+
+      @media (max-width: 480px) {
+        .main > div {
+          width: 90%; 
+        }
+
+        h1 {
+          font-size: 1.2em;
+        }
+
+        p {
+          font-size: 1em;
+        }
+
+        button {
+          font-size: 1em;
+        }
+      }
+    </style>
+  </head>
+
   <body>
     <div class="main">
       <div>
         <img
           src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
-          alt="marvel studios"
+          alt="Marvel Studios"
         />
-        <h1>Doctor strange 2</h1>
-        <p>rating: 4.5</p>
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
         <button>Book Now</button>
       </div>
       <div>
         <img
           src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
-          alt="marvel studios"
+          alt="Marvel Studios"
         />
-        <h1>Doctor strange 2</h1>
-        <p>rating: 4.5</p>
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
         <button>Book Now</button>
       </div>
       <div>
         <img
           src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
-          alt="marvel studios"
+          alt="Marvel Studios"
         />
-        <h1>Doctor strange 2</h1>
-        <p>rating: 4.5</p>
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
         <button>Book Now</button>
       </div>
       <div>
         <img
           src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
-          alt="marvel studios"
+          alt="Marvel Studios"
         />
-        <h1>Doctor strange 2</h1>
-        <p>rating: 4.5</p>
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
         <button>Book Now</button>
       </div>
       <div>
         <img
           src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
-          alt="marvel studios"
+          alt="Marvel Studios"
         />
-        <h1>Doctor strange 2</h1>
-        <p>rating: 4.5</p>
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
         <button>Book Now</button>
       </div>
       <div>
         <img
           src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
-          alt="marvel studios"
+          alt="Marvel Studios"
         />
-        <h1>Doctor strange 2</h1>
-        <p>rating: 4.5</p>
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
+        <button>Book Now</button>
+      </div>
+      <div>
+        <img
+          src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
+          alt="Marvel Studios"
+        />
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
+        <button>Book Now</button>
+      </div>
+      <div>
+        <img
+          src="https://assetscdn1.paytm.com/images/cinema/Doctor-Strange--In-The-Multiverse-Of-Madness-r-705x750-36f0e140-b752-11ec-a762-319bdb0970f2.jpg"
+          alt="Marvel Studios"
+        />
+        <h1>Doctor Strange 2</h1>
+        <p>Rating: 4.5</p>
         <button>Book Now</button>
       </div>
     </div>
