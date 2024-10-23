@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Add a font for better readability */
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    margin: 20px 0; /* Add some margin above and below the heading */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust to ensure responsive design */
+    gap: 20px; 
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9; 
+    transition: box-shadow 0.5s ease; 
+    text-align: center; 
+}
+
+.box img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.coupon-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px dotted palevioletred;
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color: #fff; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    margin-left: 180px;
+    color: palevioletred;
+    background-color: rgb(255, 233, 240);
+    font-weight: 600;
+    width: 140px;
+}
+
+.coupon-code {
+    flex-grow: 1; 
+    text-align: left; 
+}
+
+.copy-icon {
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 367px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

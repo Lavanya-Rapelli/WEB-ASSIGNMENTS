@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Center the button vertically */
+    background-color: #f0f0f0; /* Light background */
+    margin: 0;
+}
+
+.coupon-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px dotted palevioletred; /* Dotted border color */
+    padding: 10px 20px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 150px; /* Fixed width */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.coupon-button:hover {
+    background-color: #e6f0ff; /* Light blue background on hover */
+}
+
+.coupon-code {
+    font-size: 16px; /* Font size for coupon code */
+    flex-grow: 1; /* Allow the coupon code to take up available space */
+    text-align: left; /* Align text to the left */
+}
+
+.copy-icon {
+    font-size: 20px; /* Font size for the copy icon */
+    margin-left: 10px; /* Space between code and icon */
+    cursor: pointer; /* Pointer cursor on hover */
+}

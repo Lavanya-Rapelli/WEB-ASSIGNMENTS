@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="coupon-button">
+        <span class="coupon-code">COUPON123</span>
+        <span class="copy-icon" onclick="copyToClipboard()">📋</span>
+    </div>
+
+    <script>
+        function copyToClipboard() {
+            const code = document.querySelector('.coupon-code').textContent;
+            navigator.clipboard.writeText(code).then(() => {
+                alert("Coupon code copied to clipboard!");
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
