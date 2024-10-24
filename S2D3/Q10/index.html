@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer</title>
+
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            background-color: #02026F;
+        }
+
+        /* Logo Section */
+        .footer-logo img {
+            width: 200px;
+            height: 200px;
+            margin: 40px 0 60px 10vw;
+        }
+
+        /* Links Section */
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            width: 60%;
+            padding: 40px 15px;
+            background-color: #3140AF;
+        }
+
+        .link-section h4 {
+            margin: 0 0 10px 40px;
+        }
+
+        .link-section ul {
+            list-style-type: none;
+        }
+
+        .link-section ul li {
+            padding: 8px 0;
+        }
+
+        .link-section ul li a {
+            color: #B1B9E1;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .link-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Bottom Section */
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            background-color: #222222;
+            padding: 25px;
+            border-top: 2px solid #666;
+        }
+
+        .footer-country {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .footer-terms {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            font-size: 14px;
+            color: #AEB9BC;
+        }
+
+        .footer-terms a {
+            color: #AEB9BC;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            footer {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .footer-logo img {
+                margin: 40px 0;
+            }
+
+            .footer-links {
+                width: 100vw;
+            }
+
+            .footer-country {
+                display: none;
+            }
+
+            .footer-terms {
+                width: 100vw;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            .footer-logo img {
+                margin: 40px 0;
+            }
+
+            .footer-links {
+                width: 100vw;
+            }
+
+            .footer-bottom {
+                border: none;
+            }
+
+            .footer-country {
+                display: none;
+            }
+
+            .footer-terms {
+                font-size: 12px;
+                width: 100vw;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+
+        <div class="footer-links">
+            <div class="link-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Etsy Registry</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Etsy blog</a></li>
+                    <li><a href="#">Etsy United Kingdom</a></li>
+                    <li><a href="#">Etsy Germany</a></li>
+                    <li><a href="#">Etsy Canada</a></li>
+                </ul>
+            </div>
+
+            <div class="link-section">
+                <h4>Sell</h4>
+                <ul>
+                    <li><a href="#">Sell on Etsy</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Affiliates & Creators</a></li>
+                </ul>
+            </div>
+
+            <div class="link-section">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">Etsy, Inc.</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Investors</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Impact</a></li>
+                    <li><a href="#">Legal imprint</a></li>
+                </ul>
+            </div>
+
+            <div class="link-section">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#">Gift cards</a></li>
+                    <li><a href="#">Etsy Registry</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Etsy blog</a></li>
+                    <li><a href="#">Etsy United Kingdom</a></li>
+                    <li><a href="#">Etsy Germany</a></li>
+                    <li><a href="#">Etsy Canada</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <div class="footer-country">
+            <img src="india-flag-round-circle-icon.svg" alt="india-flag" height="25px" width="25px">
+            <span> India | English (IN) | ₹ (INR)</span>
+        </div>
+        <div class="footer-terms">
+            <span>©2024 Etsy, Inc.</span>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Interest-based ads</a>
+            <a href="#">Local Shops</a>
+            <a href="#">Regions</a>
+        </div>
+    </div>
+</body>
+
+</html>
