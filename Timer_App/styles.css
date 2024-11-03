@@ -1,0 +1,108 @@
+/* Basic page setup */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e0f7fa; 
+}
+
+.timer-container {
+    text-align: center;
+    background: #ffffff; 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 400px;
+    transition: transform 0.2s; 
+}
+
+.timer-container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    color: #00796b; 
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+#display {
+    font-size: 2.5em;
+    color: #37474f; 
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 500;
+    flex: 1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#start {
+    background-color: #43a047; 
+}
+
+#start:hover {
+    background-color: #388e3c;
+    transform: translateY(-2px);
+}
+
+#stop {
+    background-color: #e53935; 
+}
+
+#stop:hover {
+    background-color: #d32f2f;
+    transform: translateY(-2px);
+}
+
+#reset {
+    background-color: #546e7a; 
+}
+
+#reset:hover {
+    background-color: #455a64;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    #display {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
